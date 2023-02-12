@@ -16,6 +16,9 @@
 		F1B6A17D2998CA1D00935AD2 /* TableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B6A17C2998CA1D00935AD2 /* TableViewTests.swift */; };
 		F1B6A1872998CA1D00935AD2 /* TableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B6A1862998CA1D00935AD2 /* TableViewUITests.swift */; };
 		F1B6A1892998CA1D00935AD2 /* TableViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B6A1882998CA1D00935AD2 /* TableViewUITestsLaunchTests.swift */; };
+		F1B6A1982998E45600935AD2 /* ミニオン.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1B6A1952998E45500935AD2 /* ミニオン.jpg */; };
+		F1B6A1992998E45600935AD2 /* IMG_8020.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F1B6A1962998E45500935AD2 /* IMG_8020.JPG */; };
+		F1B6A19A2998E45600935AD2 /* IMG_8015.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F1B6A1972998E45500935AD2 /* IMG_8015.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		F1B6A1822998CA1D00935AD2 /* TableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B6A1862998CA1D00935AD2 /* TableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewUITests.swift; sourceTree = "<group>"; };
 		F1B6A1882998CA1D00935AD2 /* TableViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F1B6A1952998E45500935AD2 /* ミニオン.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ミニオン.jpg"; sourceTree = "<group>"; };
+		F1B6A1962998E45500935AD2 /* IMG_8020.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_8020.JPG; sourceTree = "<group>"; };
+		F1B6A1972998E45500935AD2 /* IMG_8015.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_8015.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,7 @@
 				F1B6A16E2998CA1C00935AD2 /* Assets.xcassets */,
 				F1B6A1702998CA1C00935AD2 /* LaunchScreen.storyboard */,
 				F1B6A1732998CA1C00935AD2 /* Info.plist */,
+				F1B6A19B2998E48400935AD2 /* Images */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -125,6 +132,16 @@
 				F1B6A1882998CA1D00935AD2 /* TableViewUITestsLaunchTests.swift */,
 			);
 			path = TableViewUITests;
+			sourceTree = "<group>";
+		};
+		F1B6A19B2998E48400935AD2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F1B6A1952998E45500935AD2 /* ミニオン.jpg */,
+				F1B6A1972998E45500935AD2 /* IMG_8015.JPG */,
+				F1B6A1962998E45500935AD2 /* IMG_8020.JPG */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +249,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1B6A1722998CA1C00935AD2 /* LaunchScreen.storyboard in Resources */,
+				F1B6A19A2998E45600935AD2 /* IMG_8015.JPG in Resources */,
+				F1B6A1992998E45600935AD2 /* IMG_8020.JPG in Resources */,
 				F1B6A16F2998CA1C00935AD2 /* Assets.xcassets in Resources */,
+				F1B6A1982998E45600935AD2 /* ミニオン.jpg in Resources */,
 				F1B6A16D2998CA1800935AD2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +465,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,9 +473,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tokoroteen.TableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -473,6 +497,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,9 +505,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tokoroteen.TableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
