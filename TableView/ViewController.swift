@@ -22,6 +22,12 @@ class ViewController: UIViewController, UITableViewDataSource{
         //DataSourceをこのViewControllerに適用！
         mugiwaraTableView.dataSource = self
         mugiwaraTableView.rowHeight = 120
+        
+        //カスタムセルの定義
+        let nib = UINib(nibName: "MemberTableViewCell", bundle: nil)
+        
+        //カスタムセルをこのViewControllerに登録
+        mugiwaraTableView.register(nib, forCellReuseIdentifier: "Cell")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -31,16 +37,16 @@ class ViewController: UIViewController, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //mugiwaraTableView上のセルを取得
-        let memberCell = mugiwaraTableView.dequeueReusableCell(withIdentifier: "Cell")!
+        let memberCell = mugiwaraTableView.dequeueReusableCell(withIdentifier: "Cell") as! MemberTableViewCell
 //        print(indexPath)
         
         //tagを受けたパーツをここで定義
-        let memberImageView = memberCell.viewWithTag(1) as! UIImageView
-        let memberNameLabel = memberCell.viewWithTag(2) as! UILabel
+//        let memberImageView = memberCell.viewWithTag(1) as! UIImageView
+//        let memberNameLabel = memberCell.viewWithTag(2) as! UILabel
         
-        //上で定義したパーツに値を代入
-        memberImageView.image = mugiwaraMemberImage[indexPath.row]
-        memberNameLabel.text = mugiwaraMember[indexPath.row]
+        //カスタムセル上のパーツにアクセスし、値を代入
+        memberCell.memberImageView.image = mugiwaraMemberImage[indexPath.row]
+        memberCell.memberNameLabel.text = mugiwaraMember[indexPath.row]
         
         return memberCell
     }

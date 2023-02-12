@@ -19,6 +19,8 @@
 		F1B6A1982998E45600935AD2 /* ミニオン.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1B6A1952998E45500935AD2 /* ミニオン.jpg */; };
 		F1B6A1992998E45600935AD2 /* IMG_8020.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F1B6A1962998E45500935AD2 /* IMG_8020.JPG */; };
 		F1B6A19A2998E45600935AD2 /* IMG_8015.JPG in Resources */ = {isa = PBXBuildFile; fileRef = F1B6A1972998E45500935AD2 /* IMG_8015.JPG */; };
+		F1B6A19E2999073E00935AD2 /* MemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B6A19C2999073E00935AD2 /* MemberTableViewCell.swift */; };
+		F1B6A19F2999073E00935AD2 /* MemberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1B6A19D2999073E00935AD2 /* MemberTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		F1B6A1952998E45500935AD2 /* ミニオン.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ミニオン.jpg"; sourceTree = "<group>"; };
 		F1B6A1962998E45500935AD2 /* IMG_8020.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_8020.JPG; sourceTree = "<group>"; };
 		F1B6A1972998E45500935AD2 /* IMG_8015.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_8015.JPG; sourceTree = "<group>"; };
+		F1B6A19C2999073E00935AD2 /* MemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberTableViewCell.swift; sourceTree = "<group>"; };
+		F1B6A19D2999073E00935AD2 /* MemberTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 				F1B6A1702998CA1C00935AD2 /* LaunchScreen.storyboard */,
 				F1B6A1732998CA1C00935AD2 /* Info.plist */,
 				F1B6A19B2998E48400935AD2 /* Images */,
+				F1B6A19C2999073E00935AD2 /* MemberTableViewCell.swift */,
+				F1B6A19D2999073E00935AD2 /* MemberTableViewCell.xib */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -249,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1B6A1722998CA1C00935AD2 /* LaunchScreen.storyboard in Resources */,
+				F1B6A19F2999073E00935AD2 /* MemberTableViewCell.xib in Resources */,
 				F1B6A19A2998E45600935AD2 /* IMG_8015.JPG in Resources */,
 				F1B6A1992998E45600935AD2 /* IMG_8020.JPG in Resources */,
 				F1B6A16F2998CA1C00935AD2 /* Assets.xcassets in Resources */,
@@ -281,6 +288,7 @@
 				F1B6A16A2998CA1800935AD2 /* ViewController.swift in Sources */,
 				F1B6A1662998CA1800935AD2 /* AppDelegate.swift in Sources */,
 				F1B6A1682998CA1800935AD2 /* SceneDelegate.swift in Sources */,
+				F1B6A19E2999073E00935AD2 /* MemberTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
